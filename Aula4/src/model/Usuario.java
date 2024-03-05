@@ -5,7 +5,7 @@ public class Usuario {
  
  private boolean EstaLogado = false;
  
-  Usuario (String Nome, String CPF, String Celular, String Email, String Senha ) {
+  public Usuario (String Nome, String CPF, String Celular, String Email, String Senha ) {
 	 this.Nome = Nome;
 	 this.CPF = CPF;
 	 this.Celular = Celular;
@@ -20,10 +20,10 @@ public class Usuario {
 	 }
  }
  public String getUsuario() {
-	 return(
-			 '\nNome' + this.Nome
-			 +'\nCPF' + this.CPF
-			 +'\nCelular' + this.Celular
+	 return
+			 ("\nNome" + this.Nome
+			 +"\nCPF" + this.CPF
+			 +"\nCelular" + this.Celular
 			 +"\nEmail" + this.Email
 			 +"\nSenha" + this.Senha
 			 +"\nEstaLogado" + this.EstaLogado
